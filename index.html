@@ -11,21 +11,34 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
-            text-decoration: none;
         }
 
-         .background {
-            background-color: aquamarine;
-            width: 250px;
-            height: 250px;
+         .parent {
+            background-color:darkcyan ;
+            height: 60px;
+            padding: 20px;
+            width: 100vw;
+         }
 
+         .child {
+            background-color:lightslategrey;
+            height: 20px;
+    
+            /* child will get overflow */
+            /* width: 100vw; */
+
+            /* w.r.t to parent */
+            /* width: 80%; */
+
+            
          }
     </style>
 </head>
 <body>
 
-    <div class="background">
-        <h2>Lorem</h2>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
 
 </body>
 </html>
