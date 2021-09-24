@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full stack session</title>
+    <title>CSS-2</title>
     <style>
-        div{
-            height: 100px;
-            background-color: red;
-        }
         span{
-            height: 100px;
-            width: 300px;
-            background-color: yellow;
+            background-color: cyan;
         }
-
+        div{
+            background-color: darkgoldenrod;
+        }
     </style>
 </head>
 <body>
+    <div>I'm a div</div> <!--block level element --> 
+    <div>
+        <h2>
+            Pointers for Div
+        </h2>
+        <ol>
+            <li>Width of a block level element is 100% of the viewport width</li>
+            <li>Height of block isn't set by default</li>
+            <li>Height & Width can be explicitly set using CSS</li>
+        </ol>
+    </div> 
 
-    <div></div>
-    <br>
-    <span>Sahil</span>
+    <span style="background-color: cyan;">I'm a span</span> <!--In-line element -->
+    <span>
+        <h2>Pointers for In-line</h2>
+        <ol>
+            <li>Width of a Inline level element is dependent on the content</li>
+            <li>Height of In-line isn't set by defaul</li>
+            <li>Height & Width can not be explicitly set using CSS</li>
+        </ol>
+    </span>
 
+    
 </body>
 </html>
