@@ -6,37 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-2</title>
     <style>
-        span{
-            background-color: cyan;
-        }
-        div{
-            background-color: darkgoldenrod;
-        }
+         .background {
+            background-color: aquamarine;
+            box-sizing: border-box;
+            width: 250px;
+            height: 250px;
+            /* --------------border----------- */
+            /* border: padding type color */
+            /* border: 3px solid black; */
+
+
+           
+            /* --------------padding----------------------- */
+            /* short hand */
+             /* padding: 50px 10px 10px 30px ; */
+              /* padding-left: 150px;  */
+             /* padding: 80px; */
+             /* padding: 80px 80px; */
+
+             /* -----------------margin-------------------- */
+                margin-left:250px;
+         }
     </style>
 </head>
 <body>
-    <div>I'm a div</div> <!--block level element --> 
-    <div>
-        <h2>
-            Pointers for Div
-        </h2>
-        <ol>
-            <li>Width of a block level element is 100% of the viewport width</li>
-            <li>Height of block isn't set by default</li>
-            <li>Height & Width can be explicitly set using CSS</li>
-        </ol>
-    </div> 
 
-    <span style="background-color: cyan;">I'm a span</span> <!--In-line element -->
-    <span>
-        <h2>Pointers for In-line</h2>
-        <ol>
-            <li>Width of a Inline level element is dependent on the content</li>
-            <li>Height of In-line isn't set by defaul</li>
-            <li>Height & Width can not be explicitly set using CSS</li>
-        </ol>
-    </span>
+    <div class="background">
+        <h2>Lorem</h2>
 
-    
 </body>
 </html>
