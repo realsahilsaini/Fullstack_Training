@@ -14,30 +14,22 @@
         }
 
          .parent {
-            background-color:darkcyan ;
-            height: 60px;
-            padding: 20px;
-            width: 100vw;
-         }
+            background-color:black;
+            color: white;
+            height: 100px;
+            /* one rem = 16px */
+            font-size: 1rem; 
+            /* rem is relative and em is absolute */
+            /* font-size: 1em; */
 
-         .child {
-            background-color:lightslategrey;
-            height: 20px;
-    
-            /* child will get overflow */
-            /* width: 100vw; */
+        }
 
-            /* w.r.t to parent */
-            /* width: 80%; */
-
-            
-         }
     </style>
 </head>
 <body>
 
     <div class="parent">
-        <div class="child"></div>
+        <h1>Heading</h1>
     </div>
 
 </body>
