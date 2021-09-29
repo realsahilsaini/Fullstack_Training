@@ -11,26 +11,36 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
+            color: white;
+        }
+        div{
+            height: 100px;
+            margin: 20px;
+            background-color: teal;
         }
 
-         .parent {
-            background-color:black;
-            color: white;
-            height: 100px;
-            /* one rem = 16px */
-            font-size: 1rem; 
-            /* rem is relative and em is absolute */
-            /* font-size: 1em; */
+        .two{
+            background-color: gray;
+            /* position: static; */
+            position: relative;
 
+        }
+        h2{
+            position: relative;
+            left: 70%;
         }
 
     </style>
 </head>
 <body>
+    <!-- <div class="one"> 
+        <h1>DIV 1</h1>
+    </div> -->
 
-    <div class="parent">
-        <h1>Heading</h1>
+
+    <div class="two">
+        <h1>DIV 2</h1>
     </div>
-
+    
 </body>
 </html>
