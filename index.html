@@ -4,41 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS-2</title>
+    <title>Document</title>
     <style>
+        body{
+            background-color: wheat;
+        }
+
         *{
-            /* --------default universal styles--------- */
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-            color:black;
+            font-family: Metropolis;
+            border: none;
+            outline: none;
         }
 
-        img{
-            width: 80px;
-
-            /* fixed means relative to View port */
-            position:fixed;
-            
-            bottom: 20px;
-            right: 20px;
-
-            /* Make mouse's arrow to pointer */
-            cursor: pointer;
-
+        .card-container{
+            margin: 30px 50px ;
+            min-height: 500px;
+            position: relative;
         }
 
+        .card-one{
+            max-width: 300px;
+            height: 380px;
+            background-color:slategrey ;
+            background-color: #fff;
+            position: relative;
+            border-radius: 10px;
+        }
 
+        .card-body{
+            padding: 10px 15px
+        }
+
+        .date{
+            background-color: crimson;
+            color: #f1f1f1;
+            width: 52px;
+            height: 47px;
+            padding: 10px;
+            border-radius: 100%;
+            text-align: center;
+            font-weight: 900;
+            font-size: 0.3 rem;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border-radius: 50%;
+        }
+
+        .banner{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card-body{
+            text-align: center;
+        }
+        
+        .travel{
+            background-color:crimson;
+            color: white;
+            font-size: 1.3rem;
+            border-radius: 5px;
+            width: auto;
+            margin: 0px auto;
+            padding: 10px;
+            /* display: block; */
+            position: relative;
+            top: -20px;
+            left: 80px;
+        }
 
     </style>
 </head>
 <body>
-
- <img src="https://www.svgrepo.com/show/332117/message.svg" alt="" />
-
-
-
     
-    
+    <div class="card-container">
+
+        <div class="card-one">
+
+            <div class="date">11 <sup>th</sup></div>
+
+            <img class="banner"src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/413px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" alt="Paris" />
+
+            <div class="card-body">
+                <h2>Paris</h2>
+            
+
+            <small>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id architecto exercitationem inventore commodi modi, vitae dolores quibusdam deleniti ullam nisi soluta aut doloribus minus earum expedita adipisci laborum laudantium quidem!
+            </small>
+            </div>
+        </div>
+        <button class="travel">Visit Paris</button>
+    </div>   
 </body>
 </html>
