@@ -10,57 +10,52 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            font-family: Metropolis;
+            margin: 4px;
         }
 
-        .parent{
-            height: 100vh;
-            background-color: black;
+        h1{
+            padding: 5px;
+            color: yellow;
+            background-color: indigo;
+        }
+
+        h1:hover{
+            background-color:black ;
+        }
+
+        div::selection{
+            background-color: chartreuse;
+            cursor: pointer;
+        }
+
+        input:focus{
+            background-color: yellow;
+        }
+
+        h1::after{
+            content: "I'm after";
+            color: white;
             position: relative;
-            
-            /* It is a parent property */
-            display: flex; 
-            flex-direction: row; 
-
-            /* This is based on primary direction.
-
-            If it's row, center (or whatever is used in justify) will work w.r.t x-axis
-
-            &
-
-            If it's column, center (or whatever is used in justify) will work w.r.t y-axis */
-
-            justify-content:space-around;
-
-            /* If you wanna allign with secondary axis */
-           
-            align-items: center;
-
-            /* To keep width of the child/card same throughout while changing the size of the window */
-
-            flex-wrap: wrap;
-
-            /* To play with more Flex properties refer to this link: 
-            https://codepen.io/enxaneta/full/adLPwv */
         }
-
-
-        .child{
-            width: 200px;
-            height: 200px;
-            background-color: teal;
-            margin: 15px;
+        
+        h1::before{
+            content: "I'm before";
+            font-size: 0.5 rem;
+            color: white;
+            position: relative;
         }
+        
     </style>
 </head>
 <body>
 
-    <div class="parent">
-        <div style="background-color: yellow;" class="child"></div>
-        <div style="background-color: salmon;" class="child"></div>
-        <div style="background-color: purple;" class="child"></div>
-        <div style="background-color:springgreen;" class="child"></div>
-        <div style="background-color:grey;" class="child"></div>
+        <h1>I'm a Sahil Saini</h1>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam reiciendis consectetur fuga nemo vel quae fugit consequatur itaque veniam a repellendus at eos culpa magnam voluptates ullam aliquam nihil amet rem atque excepturi magni, facere totam maxime. Ducimus velit consectetur ullam dolores dignissimos eligendi aliquam molestiae explicabo officia deleniti necessitatibus, ad adipisci, exercitationem ea maiores architecto consequuntur culpa recusandae. Voluptatum quas officiis illo molestias eum placeat recusandae quaerat culpa ipsum aperiam, enim asperiores blanditiis corrupti ea sequi? Modi quasi, a rerum fuga id ipsa, similique impedit laudantium totam excepturi aliquam voluptatibus blanditiis tenetur unde sunt maxime. A, cupiditate. Cumque, totam.
     </div>
+<br>
+    <input type="text">
 </body>
 </html>
 
