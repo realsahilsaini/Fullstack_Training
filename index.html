@@ -29,14 +29,23 @@
 
             If it's column, center (or whatever is used in justify) will work w.r.t y-axis */
 
-            justify-content:center;
+            justify-content:space-around;
 
             /* If you wanna allign with secondary axis */
+           
             align-items: center;
+
+            /* To keep width of the child/card same throughout while changing the size of the window */
+
+            flex-wrap: wrap;
+
+            /* To play with more Flex properties refer to this link: 
+            https://codepen.io/enxaneta/full/adLPwv */
         }
 
+
         .child{
-            width: 150px;
+            width: 200px;
             height: 200px;
             background-color: teal;
             margin: 15px;
@@ -50,6 +59,8 @@
         <div style="background-color: salmon;" class="child"></div>
         <div style="background-color: purple;" class="child"></div>
         <div style="background-color:springgreen;" class="child"></div>
+        <div style="background-color:grey;" class="child"></div>
     </div>
 </body>
 </html>
+
