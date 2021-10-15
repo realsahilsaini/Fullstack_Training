@@ -4,65 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
- * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            margin: 4px;
-        }
-        
-
-        div.parent {
-            background-color: #111;
-            min-height: 600px;
-        }
-        
-        /* Trannsition */
-        div.child {
-            background-color: green;
-            border-radius: 50%;
-            height: 100px;
-            width: 100px;
-        }
-
-        /* Animations */
-        @keyframes move {
-            
-            /* points of completion:   */
-
-            0%{
-                transform: translateY(0vw);
-            }
-
-            100%{
-                transform: translateY(500px);
-            }
-        }
-
-        
-        div.parent:hover div.child {
-
-            /* Here move is the name of the animation */
-            animation: 0.8s move ease;
-            /* This will keep animation in the final state  */
-            animation-fill-mode: forwards;
-            animation-iteration-count:infinite;
-            animation-direction: alternate;
-
-            background-color:chartreuse;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Todo-List</title>
 </head>
 <body>
+    <header></header>
 
-    <div class="parent">
-        <div class="child"></div>
-    </div>
+    <footer>
 
-<br>
+        <div>
+            <a href="https://github.com/realsahilsaini">Sahil Saini</a>
+        </div>
 
+        <div>
+            <a href="#"><img class="social" src="./assets/images/github.png" alt=""></a>
+            <a href="#"><img class="social" src="./assets/images/instagram.png" alt=""></a>
+            <a href="#"><img class="social" src="./assets/images/linkedin.png" alt=""></a>
+        </div>
+
+    </footer>
 </body>
 </html>
-
