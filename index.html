@@ -13,28 +13,45 @@
             margin: 4px;
         }
         
+
         div.parent {
             background-color: #111;
-            min-height: 200px;
+            min-height: 600px;
         }
         
+        /* Trannsition */
         div.child {
             background-color: green;
+            border-radius: 50%;
             height: 100px;
             width: 100px;
-            transition-duration: 0.5s;
-            /* transition-delay: 0.5s; */
-            transition-timing-function: cubic-bezier(0, 1.43, 1,-0.15);
-            border-radius: 50%;
         }
-        
-        div.parent:hover div.child {
-            background-color: cyan;
+
+        /* Animations */
+        @keyframes move {
+            
+            /* points of completion:   */
+
+            0%{
+                transform: translateY(0vw);
+            }
+
+            100%{
+                transform: translateY(500px);
+            }
+        }
 
         
-            /* We have more things in transform, do check it out */
-            transform: translateX(500px);
-            /* transform: rotateY(100deg); */
+        div.parent:hover div.child {
+
+            /* Here move is the name of the animation */
+            animation: 0.8s move ease;
+            /* This will keep animation in the final state  */
+            animation-fill-mode: forwards;
+            animation-iteration-count:infinite;
+            animation-direction: alternate;
+
+            background-color:chartreuse;
         }
     </style>
 </head>
