@@ -9,51 +9,29 @@
     <script src="https://kit.fontawesome.com/b862bb0d81.js" crossorigin="anonymous"></script>
     <script defer src="./script.js"></script>
     <title>ToDoList</title>
+    <style>
+
+        /* That's the default property for this div  */
+        div.parent{
+            background-color: black;
+            color: white;
+        }
+
+        /* This property will be maintained until width is less than or equal to 500px */
+        @media (max-width: 500px) {
+            div.parent{
+                background: yellow;
+                color: black
+            }
+
+        }
+    </style>
 </head>
 
 <body>
-    <header></header>
-    <section class="list-container">
-        <div class="container">
-            <h2>
-                Todo List <input type="checkbox" id="switch" /><label class="switch-label" for="switch">Toggle</label
-          >
-        </h2>
-        <div class="list">
-          <div class="list-item">
-            <input placeholder="Add a task to the List..." type="text" />
-            <i class="fas fa-plus"></i>
-          </div>
-          <ol class="todo-list">
-            <div class="taskbar list-item">
-              <div>5 Items left</div>
-              <div style="display: flex">
-                <div class="active" id="all">All</div>
-                <div id="pending">Pending</div>
-                <div id="complete">Completed</div>
-              </div>
-              <div class="clear">Clear</div>
-            </div>
-            <div class="items"></div>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div>
-        <a target="_blank" href="https://github.com/kartik18g"> Kartik Gupta</a>
-      </div>
-      <div>
-        <a href="https://github.com/kartik18g"
-          ><i class="fa fa-instagram"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/kartik-gupta-3275651b8/"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-
-        <a href="https://github.com/kartik18g"> <i class="fa fa-github"></i></a>
-      </div>
-    </footer>
-  </body>
+    <div class="parent">
+        <h1>I'm heading</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia delectus, ea eos dolores nihil, ullam sunt, non doloremque expedita laboriosam exercitationem earum accusamus iure error ducimus! Quae omnis explicabo ea ducimus eos consequatur minus eius possimus! Qui ab quos obcaecati officiis consequatur aliquid minima earum voluptatibus veniam sit rerum, asperiores aut omnis tenetur natus magnam nihil quis molestiae recusandae? Id explicabo recusandae eligendi nisi, sequi inventore qui fugit tempora. Magnam iste labore dolor officia hic mollitia libero voluptates molestiae, laudantium nam cupiditate voluptatum, perspiciatis temporibus magni enim voluptatem qui. Earum nemo nesciunt qui, consequuntur ex commodi nulla amet illo dignissimos?</p>
+    </div>
+</body>
 </html>
