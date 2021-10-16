@@ -10,28 +10,44 @@
     <script defer src="./script.js"></script>
     <title>ToDoList</title>
     <style>
-
-        /* That's the default property for this div  */
-        div.parent{
-            background-color: black;
-            color: white;
+        
+        div.parent {
+            display: flex;
+            align-items: stretch;
+            background-color: #111;
+            height: 100vh;
         }
 
-        /* This property will be maintained until width is less than or equal to 500px */
-        @media (max-width: 500px) {
-            div.parent{
-                background: yellow;
-                color: black
+        div.child {
+            background-color: #ffbf00;
+            flex-basis: 80%;
+        }
+
+        div.sidebar {
+            background-color: crimson;
+            flex-basis: 20%;
+        }
+
+        @media (max-width: 450px) {
+            div.sidebar{
+                flex-basis: 0%;
             }
-
+    
+            div.child{
+                flex-basis: 100%;
+            }
         }
+
+
+    </style>
     </style>
 </head>
 
 <body>
+
     <div class="parent">
-        <h1>I'm heading</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia delectus, ea eos dolores nihil, ullam sunt, non doloremque expedita laboriosam exercitationem earum accusamus iure error ducimus! Quae omnis explicabo ea ducimus eos consequatur minus eius possimus! Qui ab quos obcaecati officiis consequatur aliquid minima earum voluptatibus veniam sit rerum, asperiores aut omnis tenetur natus magnam nihil quis molestiae recusandae? Id explicabo recusandae eligendi nisi, sequi inventore qui fugit tempora. Magnam iste labore dolor officia hic mollitia libero voluptates molestiae, laudantium nam cupiditate voluptatum, perspiciatis temporibus magni enim voluptatem qui. Earum nemo nesciunt qui, consequuntur ex commodi nulla amet illo dignissimos?</p>
-    </div>
-</body>
+        <div class="sidebar"></div>
+        <div class="child"></div>
+
+    </body>
 </html>
