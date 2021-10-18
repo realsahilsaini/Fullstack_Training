@@ -1,18 +1,17 @@
-//**Arrays**
-var arr = [1,2,3,4]
-console.log(arr)
+//Reassigning the value to variable
 
-//Arrays are generic we can add any data types element
-var arr1 = [1,2,3,4,'age']
-console.log(arr1)
+// var age =19
+
+// age = 21
+
+// console.log(age)
 
 // --------------------------------------------------------
 
-// **Methods with arrays** 
+//To make a variable vbalue as a constant 
+const age = 19
 
-// console.log(arr.length)
+// This will give an error, beacause we have made the age variable as a constant
+age =21
 
-// console.log(typeof arr)
-
-// arr.push(5)
-// console.log(arr)
+console.log(21)
