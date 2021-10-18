@@ -1,16 +1,18 @@
-//Variables
-//Without assigning any value to variable the output of the variable will be undefined
-var age = 19 
-console.log(age)
+//**Arrays**
+var arr = [1,2,3,4]
+console.log(arr)
+
+//Arrays are generic we can add any data types element
+var arr1 = [1,2,3,4,'age']
+console.log(arr1)
 
 // --------------------------------------------------------
 
-//This will thorw an error, since 'Name' not declared
-// console.log(Name)
+// **Methods with arrays** 
 
-// --------------------------------------------------------
+// console.log(arr.length)
 
-//Null 
-var address = null
-//Output: object
-console.log(typeof address)
+// console.log(typeof arr)
+
+// arr.push(5)
+// console.log(arr)
