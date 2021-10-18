@@ -1,14 +1,16 @@
-//string
-//typeof used to see the datatype
-console.log(typeof("Hello World !"))
-console.log(typeof("d"))
+//Variables
+//Without assigning any value to variable the output of the variable will be undefined
+var age = 19 
+console.log(age)
 
-//Numbers
-console.log(typeof 1)
-console.log(typeof 1.2)
-console.log(typeof 12343268097683621)
-console.log(typeof -12343268097683621)
+// --------------------------------------------------------
 
-//boolean
-console.log(typeof true)
-console.log(typeof false)
+//This will thorw an error, since 'Name' not declared
+// console.log(Name)
+
+// --------------------------------------------------------
+
+//Null 
+var address = null
+//Output: object
+console.log(typeof address)
