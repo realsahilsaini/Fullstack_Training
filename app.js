@@ -1,23 +1,15 @@
-var heading = document.getElementById('heading')
-// heading.innerHTML= "Hi from Js"
+// var heading = document.getElementById('heading')
 
-// var para = document.getElementsByClassName('para')
 // console.log(heading)
 
-// console.log(para.length)
+heading.innerHTML = "I was added by JS"
+heading.style = "color:red; font-size:2rem"
 
-// Output is the firs element with the 'para' as a class name
-// console.log(para[0])
+// heading.classList.add('five')
+// heading.classList.remove('one')
+// console.log(heading.classList)
 
-// Output is the second element with the 'para' as a class name
-// console.log(para[1])
+var body = document.querySelector('body')
+body.classList.add('dark')
+body.classList.remove('dark')
 
-
-// var tags = document.getElementsByTagName('a')
-// console.log(tags)
-
-// var query = document.querySelector('#heading')
-// console.log(query)
-
-var query = document.querySelector('.para')
-console.log(query)
