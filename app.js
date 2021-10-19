@@ -1,21 +1,28 @@
-//Callback function 
+var button = document.querySelector('button')
+var input = document.querySelector('input')
+var list = document.querySelector('ul')
 
-var arr = ['Go to GYM', 'Eat food', 'Clean House']
+// To check whether we have selected all the correct tags 
+// console.log(button, input, list)
+
+const callbackfunc = (event) => {
+    
+    // console.log(event)
+    // console.log(event.target)
+
+//    This shows the value in the input box  
+    // console.log(input.value)
+
+    // To view the contents present in any tag 
+    // console.log(button.innerHTML)
+  
+    const inputValue = input.value
+    const element = document.createElement('li')
+    const textNode = document.createTextNode(inputValue)
+    element.appendChild(textNode)
+    list.appendChild(element)
+}
 
 
-// default approach
-// for(var i=0; i < arr.length; i++){
-//     console.log(arr[i])
-// }
 
-//Another approach (Remember: here 'element' is not a keyword)
-// var CallbackFunction = (element) => {
-//     console.log(element)
-// }
-
-//Another approach by using arrow function 
-
-arr.forEach( (element, index) => {
-    console.log(element, index)
-})
-
+button.addEventListener('click', callbackfunc)
