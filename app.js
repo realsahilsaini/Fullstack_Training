@@ -1,14 +1,44 @@
-var list = document.querySelector('ul')
+// function greet(name ,age){
+//     console.log('Hey ' + name + ", Your age is " + age)
+// }
 
-var arr = ['Go to GYM', 'Cook oatmeal', 'Eat']
+// This is the default parameters
+// greet('Sahil', 19)
 
-for(var i=0 ; i < arr.length ; i++){
-    // This is how we create new element 
-    var element = document.createElement('li')
-    var textNode = document.createTextNode(arr[i])
-    //Appending/linking the text node to li 
-    element.appendChild(textNode)
-    //Appending/linking the li to ul
-    list.appendChild(element)
-    console.log(textNode)
-}
+//---------------------------------------------
+
+// function greet(name='John' ,age='20'){
+//     console.log('Hey ' + name + ", Your age is " + age)
+// }
+// greet()
+
+//---------------------------------------------
+
+// function sum(a,b){
+//     console.log(a+b)
+// }
+
+// sum(5,4)
+
+//---------------------------------------------
+// Function declaration 
+// function add(a=0,b=0){
+//     var sum = a+ b
+//     return sum
+// }
+
+//Function expression 
+// var add = function (a=0, b=0){
+//     var sum = a+b
+//     return sum;
+// }
+// OR (without using function keyword)
+// var add = (a=0, b=0) => {
+//     var sum = a+b
+//     return sum;
+// }
+
+//This is also equivalent to 
+var add = (a=0, b=0) => a+b
+
+console.log(add(10,20))
