@@ -1,44 +1,21 @@
-// function greet(name ,age){
-//     console.log('Hey ' + name + ", Your age is " + age)
+//Callback function 
+
+var arr = ['Go to GYM', 'Eat food', 'Clean House']
+
+
+// default approach
+// for(var i=0; i < arr.length; i++){
+//     console.log(arr[i])
 // }
 
-// This is the default parameters
-// greet('Sahil', 19)
-
-//---------------------------------------------
-
-// function greet(name='John' ,age='20'){
-//     console.log('Hey ' + name + ", Your age is " + age)
-// }
-// greet()
-
-//---------------------------------------------
-
-// function sum(a,b){
-//     console.log(a+b)
+//Another approach (Remember: here 'element' is not a keyword)
+// var CallbackFunction = (element) => {
+//     console.log(element)
 // }
 
-// sum(5,4)
+//Another approach by using arrow function 
 
-//---------------------------------------------
-// Function declaration 
-// function add(a=0,b=0){
-//     var sum = a+ b
-//     return sum
-// }
+arr.forEach( (element, index) => {
+    console.log(element, index)
+})
 
-//Function expression 
-// var add = function (a=0, b=0){
-//     var sum = a+b
-//     return sum;
-// }
-// OR (without using function keyword)
-// var add = (a=0, b=0) => {
-//     var sum = a+b
-//     return sum;
-// }
-
-//This is also equivalent to 
-var add = (a=0, b=0) => a+b
-
-console.log(add(10,20))
