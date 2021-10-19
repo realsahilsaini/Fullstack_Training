@@ -1,28 +1,11 @@
+var body = document.querySelector('body')
 var button = document.querySelector('button')
-var input = document.querySelector('input')
-var list = document.querySelector('ul')
-
-// To check whether we have selected all the correct tags 
-// console.log(button, input, list)
 
 const callbackfunc = (event) => {
+    // body.classList.add('dark')
     
-    // console.log(event)
-    // console.log(event.target)
-
-//    This shows the value in the input box  
-    // console.log(input.value)
-
-    // To view the contents present in any tag 
-    // console.log(button.innerHTML)
-  
-    const inputValue = input.value
-    const element = document.createElement('li')
-    const textNode = document.createTextNode(inputValue)
-    element.appendChild(textNode)
-    list.appendChild(element)
+    //By this method we can switch back to light mode
+    body.classList.toggle('dark')
 }
-
-
 
 button.addEventListener('click', callbackfunc)
