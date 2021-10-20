@@ -1,11 +1,50 @@
-var body = document.querySelector('body')
-var button = document.querySelector('button')
+// const a = document.querySelectorAll('input')
+// const b = document.querySelectorAll('input')
+// OR 
+const a = document.getElementsByTagName('input')[0]
+const b = document.getElementsByTagName('input')[1]
 
-const callbackfunc = (event) => {
-    // body.classList.add('dark')
-    
-    //By this method we can switch back to light mode
-    body.classList.toggle('dark')
+const add = document.querySelector('#add')
+const multiply = document.querySelector('#multiply')
+const resultbox = document.querySelector('.result')
+
+
+//ADD
+const sum = () => {
+    //here the parseint functions converts string to integer
+    const result = parseInt(a.value) + parseInt(b.value)
+    resultbox.innerHTML = result
+    console.log(resultbox)
 }
 
-button.addEventListener('click', callbackfunc)
+add.addEventListener('click', sum)
+
+//MULTIPLY
+const multiplication = () => {
+    //here the parseint functions converts string to integer
+    const result = parseInt(a.value) * parseInt(b.value)
+    resultbox.innerHTML = result
+    console.log(resultbox)
+}
+
+multiply.addEventListener('click', multiplication)
+
+// OR 
+
+const calculate = (operation) => {
+    if(operation == 'add'){
+        console.log('adding')
+    }
+    else if(operation =='multiply'){
+        console.log('multiply')
+    }
+}
+
+// Here we are calling function inside another function 
+add.addEventListener('click',() =>{
+    return calculate('add')
+})
+
+multiply.addEventListener('click', () =>{
+    return calculate('multiply')
+})
