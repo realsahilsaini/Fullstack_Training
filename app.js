@@ -44,7 +44,7 @@ var arr = [1,2,3,4,5, 6, 7, 8]
 //Parameters: (index, no. of elements to remove after the index)
 // arr.splice(3, 3)
 
-// This will output all the removed elements 
+//This will output all the removed elements 
 console.log(arr.splice(3, 3))
 
 
