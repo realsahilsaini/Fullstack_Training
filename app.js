@@ -31,7 +31,7 @@ multiply.addEventListener('click', multiplication)
 
 // OR 
 
-const calculate = (operation) => {
+const calculate = (event, operation) => {
     if(operation == 'add'){
         console.log('adding')
     }
@@ -41,10 +41,10 @@ const calculate = (operation) => {
 }
 
 // Here we are calling function inside another function 
-add.addEventListener('click',() =>{
-    return calculate('add')
+add.addEventListener('click',(event) =>{
+    return calculate(event, 'add')
 })
 
-multiply.addEventListener('click', () =>{
-    return calculate('multiply')
+multiply.addEventListener('click', (event) =>{
+    return calculate(event, 'multiply')
 })
