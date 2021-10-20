@@ -9,36 +9,27 @@ const multiply = document.querySelector('#multiply')
 const resultbox = document.querySelector('.result')
 
 
-//ADD
-const sum = () => {
-    //here the parseint functions converts string to integer
-    const result = parseInt(a.value) + parseInt(b.value)
-    resultbox.innerHTML = result
-    console.log(resultbox)
-}
-
-add.addEventListener('click', sum)
-
-//MULTIPLY
-const multiplication = () => {
-    //here the parseint functions converts string to integer
-    const result = parseInt(a.value) * parseInt(b.value)
-    resultbox.innerHTML = result
-    console.log(resultbox)
-}
-
-multiply.addEventListener('click', multiplication)
-
-// OR 
-
 const calculate = (event, operation) => {
-    if(operation == 'add'){
-        console.log('adding')
-    }
-    else if(operation =='multiply'){
-        console.log('multiply')
+    // if(operation == 'add'){
+    //     console.log('adding')
+    // }
+    // else if(operation =='multiply'){
+    //     console.log('multiply')
+    // }
+    switch(operation){
+        case 'add':
+        resultbox.innerHTML =  parseInt(a.value) + parseInt(b.value)
+        break;
+
+        case 'multiply':
+        resultbox.innerHTML =  parseInt(a.value) * parseInt(b.value)
+        break;
+
+        default:
+            resultbox.innerHTML = "Not a valid input"
     }
 }
+
 
 // Here we are calling function inside another function 
 add.addEventListener('click',(event) =>{
