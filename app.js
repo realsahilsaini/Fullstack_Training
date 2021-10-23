@@ -1,5 +1,12 @@
-//this is a object
+let car = {
+    name: "M6",
+    manufacturer: "Mazada",
+    // A function inside a object is a method 
+    print: function() {
+        console.log('Car')
+        console.log( this.name + ' by ' + this.manufacturer)
+    }
+    
+}
 
-//Here the 'this' has access to window object 
-//And here we are creating alert to popup on your window 
-// console.log(this.alert('HI !'))
+car.print()
