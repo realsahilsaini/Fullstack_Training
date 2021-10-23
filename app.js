@@ -6,7 +6,12 @@ let car = {
         console.log('Car')
         // console.log( this.name + ' by ' + this.manufacturer)
         // console.log( car.name + ' by ' + car.manufacturer)
+
         console.log(this)
+
+        // Template String 
+        console.log(`${this.name} was created by ${this.manufacturer}`)
+        
     }
     
 }
