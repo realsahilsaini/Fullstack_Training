@@ -9,7 +9,7 @@ let car = {
         console.log(this)
 
         // Template String 
-        console.log(`${this.name} was created by ${this.manufacturer}`)
+        console.log(`${car.name} was created by ${car.manufacturer}`)
         
     }
     
