@@ -1,20 +1,7 @@
-let car = {
-    name: "M6",
-    manufacturer: "Mazada",
-    // A function inside a object is a method 
-    print: () => {
-        console.log('Car')
 
-        // Template String 
-        console.log(`${car.name} was created by ${car.manufacturer}`)
-        
-    }
-    
-}
+//This function perform ta sk after a particular time
+setTimeout( () =>{
+    console.log("Sahil")
+}, 3000)
 
-// console.log(Object.keys(car))
-// console.log(Object.values(car))
-
-//Checks whether the property exists or not
-// console.log(car.hasOwnProperty('name'))
-
+console.log('Hi')
