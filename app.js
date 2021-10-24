@@ -5,9 +5,6 @@ let car = {
     print: () => {
         console.log('Car')
 
-        //'this' keyword inside the arrow function points to the window object, but 'this' keyword in the function declaration change depending in which object it is in
-        console.log(this)
-
         // Template String 
         console.log(`${car.name} was created by ${car.manufacturer}`)
         
@@ -15,4 +12,9 @@ let car = {
     
 }
 
-car.print()
+// console.log(Object.keys(car))
+// console.log(Object.values(car))
+
+//Checks whether the property exists or not
+// console.log(car.hasOwnProperty('name'))
+
