@@ -2,11 +2,10 @@ let car = {
     name: "M6",
     manufacturer: "Mazada",
     // A function inside a object is a method 
-    print: function() {
+    print: () => {
         console.log('Car')
-        // console.log( this.name + ' by ' + this.manufacturer)
-        // console.log( car.name + ' by ' + car.manufacturer)
 
+        //'this' keyword inside the arrow function points to the window object, but 'this' keyword in the function declaration change depending in which object it is in
         console.log(this)
 
         // Template String 
