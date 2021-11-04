@@ -1,6 +1,7 @@
-let response = fetch('https://jsonplaceholder.typicode.com/users').then(data => {
-    console.log(data)
+let response = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(data => 
+    {console.log(data)
 })
 
 
-//.then method: 
+/* Remember: .then always returns promise */
+
