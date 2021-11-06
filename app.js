@@ -1,7 +1,8 @@
-let response = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(data => 
-    {console.log(data)
+let Name = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('Sahil')
+    },3000)
 })
 
-
-/* Remember: .then always returns promise */
+Name.then(name => {console.log(name)})
 
