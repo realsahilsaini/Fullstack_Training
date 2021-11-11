@@ -1,22 +1,19 @@
-// This will give error because, here we are not waiting for the Promise to resolve
-// const response = fetch('https://jsonplaceholder.typicode.com/users')
+const button = document.querySelector('button')
+const input = document.querySelector('input')
 
-// const data = response.json()
-
-// console.log(data)
-
-// Correct method 
-
-const fetchdata = async () => {
-
-    const response = await fetch('https://jsonplaceholder.typicode.com/users')
-
-    console.log(response)
-    
-    const data = await response.json()
-
-    console.log(data)
-
+const getData = async (item) => {
+    console.log(item)
+    let url = `https://api.edamam.com/search?app_id=bd51454f&app_key=3b359328e30cad3141319969dfedaba9&q=${item}`
+    console.log(url)
+    const res = await fetch(url)
+    const data = await res.json()
+    console.log()
+    data.hits.forEach(recipe => {
+        console.log(recipe)
+    })
 }
 
-fetchdata()
+//  add event listener to the button
+button.addEventListener('click', (e) => {
+    getData(input.value)
+})
