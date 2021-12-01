@@ -1,3 +1,5 @@
-for(var i = 0; i < 10; i++ ){
-    console.log('iteration', i + 1)
-}
+const greet  = () => 'hi'
+
+module.exports.greet = greet
+
+console.log('Test')
