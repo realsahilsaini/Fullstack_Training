@@ -1,7 +1,25 @@
-const{ add, subtract, multiply, divide, message } = require('./utils')
+// PUT & PATCH 
 
-add()
-subtract()
-multiply()
-divide()
-console.log(message)
+// const obj1 = {
+//     name: "McQueen",
+//     email: "cars@cars.com"
+// }
+
+// //PUT 
+// const obj2 = {
+//     name: "Mater"
+// }
+
+// const result = {
+//     name: "Mater"
+// }
+// //Patch
+// const obj2 = {
+//     name: "Mater"
+// }
+
+// const result = {
+//     name: "Mater",
+//     email: "cars@cars.com"
+// }
+
