@@ -1,25 +1,23 @@
-// PUT & PATCH 
+// console.log(localStorage)
 
-// const obj1 = {
-//     name: "McQueen",
-//     email: "cars@cars.com"
-// }
+// localStorage.setItem('InputValue', "Something")
+// console.log(localStorage.getItem("InputValue")) 
 
-// //PUT 
-// const obj2 = {
-//     name: "Mater"
-// }
+// To clear local storage we have two methods:
+// 1. Either to do it manually via applications 
+// 2. localStorage.clear()
 
-// const result = {
-//     name: "Mater"
-// }
-// //Patch
-// const obj2 = {
-//     name: "Mater"
-// }
+// localStorage.clear()
 
-// const result = {
-//     name: "Mater",
-//     email: "cars@cars.com"
-// }
+// ----------------------------------------------
 
+const button = document.querySelector('button')
+const input = document.querySelector('input')
+const div = document.querySelector('div')
+
+div.innerHTML = localStorage.getItem('InputValue')
+
+button.addEventListener('click', (req, res) => {
+    localStorage.setItem('InputValue', input.value)
+    div.innerHTML = input.value
+})
