@@ -1,24 +1,14 @@
-// How to store array in local storage 
+//Modules
 
+//path module
 
-const button = document.querySelector('button')
-const input = document.querySelector('input')
-const div = document.querySelector('div')
+const path = require('path')
 
-// localStorage.clear()
+// console.log(path)
 
-const arr = [1, 2, 3, 4, 5]
+// console.log(path.resolve('./utils.js'))
+//resolve converts an relative part to absolute path 
 
-// localStorage.setItem('val', arr)
-
-//Local storage apparently only supports string
-//But yet the arr will be displayed as string
-// console.log(localStorage.getItem('val'))
-
-// so there is a in-built function that does this job input i.e to give output in the array
-// localStorage.setItem('val', JSON.stringify(arr))
-// It is still a string in the console log 
-// console.log(localStorage.getItem('val'))
-
-// To get back to its form 
-// console.log(JSON.parse(localStorage.getItem('val')))
+console.log(path.relative('../', "./utils.js"))
+//1st parameter: With what is should be relative (here it is last to last folder './')
+// 2nd parameter: file location
