@@ -1,35 +1,44 @@
 //Modules
 
-//path module
+//File system (fs)
 
-const path = require('path')
+const fs = require('fs')
 
-// console.log(path)
+// console.log(fs)
 
-//------------------------------------
+//Let's discuss 2 Imp 
 
-// console.log(path.resolve('./utils.js'))
-//resolve converts an relative part to absolute path 
+// fs.readFile('./test.txt', 'utf8',  (error, data) => {
+//     if(error) console.log(error)
+//     else console.log(data)
+// })
 
-//------------------------------------
+//If it executes successfully it would show buffer i.e raw data
+//N here we have to encode the buffer
+//By adding utf8 we can encode it 
+//Similarly for another encoding
+//Also by adding 'tostringmethod()' in the else statement
+//Remember: read file is an asynchronous task
+//To make it synchronous:
 
-// console.log(path.relative('./', "./utils.js"))
-//1st parameter: With what is should be relative (here it is last to last folder './')
-// "/" denotes the root
-// 2nd parameter: file location
-
-//------------------------------------
-
-// console.log(path.extname('./utils.js'))
-
-//------------------------------------
-
-// console.log(path.dirname('./utils.js'))
+// console.log(fs.readFileSync('./test.txt', 'utf8'))
 
 //------------------------------------
 
-// console.log(__dirname) 
+// This overwrites
+// fs.writeFile('./test.txt', "Hi, Sahil here!",  (error) => {
+//     if(error) console.log(error)
+// })
 
-//------------------------------------
+// To append data 
+fs.writeFile('./test.txt', `Append me 2 ${fs.readFileSync('./test.txt', 'utf8')}`, 
+(error) => {
+    if(error) console.log(error)
+})
 
-// console.log(path.join(__dirname, 'app.js'))
+//Read and Write both has sync and Async
+
+
+
+
+
